@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>百度一下,你就知道</title>
+<style>
+   *{
+      margin: 0;
+      padding: 0;
+   }
+   html,body{
+      width: 100%;
+      height: 100%;
+
+   }
+.top{
+   width: 654px;
+   height: 550px;
+   margin: 0 auto;
+
+
+}
+
+
+
+.top_tou{
+   position: relative;
+   width: 654px;
+   height: 260px;
+
+} 
+ .top_tou img{
+    position: absolute;
+    left: 50%;
+    margin-left: -135px;
+   bottom: 10px;
+
+}
+.sousuo div{
+   position: relative;
+   display: inline-block;
+   width:24px;
+   height:20px;
+   background:#fff url(2.png) no-repeat;
+   background-position: 0 -51px;
+   top: 5px;
+   left: 20px;
+}
+.sousuo div:hover{
+
+   background-position: 0 -75px;
+}
+
+.sousuo input:nth-of-type(1){
+ width: 470px;
+height: 34px;
+border: none;
+outline: none;
+margin: 5px 10px;
+}
+.sousuo{
+width:546px;
+height:44px;
+border: 2px solid #c4c7ce;
+border-right: none !important;
+border-radius:  8px 0 0 8px;
+display: inline-block;
+}
+.sousuo:hover{
+border: 2px solid #a2a4ac;
+border-right: none;
+}
+span{
+  position: absolute;
+   width: 100px;
+   height: 48px;
+display: inline-block;
+   background-color: #4E6EF2;
+  border-radius: 0 8px 8px 0 ;
+  text-align: center;
+ line-height: 48px;
+ color: white;
+ user-select: none;
+}
+#one ul li{
+   list-style: none;
+   float: left;
+     height: 60px;
+     text-align: center;
+     line-height: 60px;
+     width: 62px;
+}
+#one ul li a{
+   font: 13px/23px Arial,sans-serif;
+  text-decoration: none;
+  color: #222222;;
+}
+#one ul li a:hover{
+   color: #315efb;
+}
+</style>
+</head>
+
+   <body id="body">
+      <div id="one">
+      <ul>
+         <a href=""></a>
+       <li><a href="http://news.baidu.com/">新闻</a></li>
+       <li><a href="https://www.hao123.com/">hao123</a></li>
+       <li><a href="https://map.baidu.com/">地图</a></li>
+       <li><a href="https://haokan.baidu.com/?sfrom=baidu-top">视频</a></li>
+       <li><a href="https://tieba.baidu.com/index.html">贴吧</a></li>
+       <li><a href="https://xueshu.baidu.com/">学术</a></li>
+       <li><a href="baidu.com/more/">更多</a></li>
+      </ul>
+   </div>
+   <div class="top">
+     <div class="top_tou">
+      <img src="./1.png" alt="" width="270" height="129">
+     </div>
+      <div class="sousuo" id="bk">
+      <input type="text" id="ss" >
+      <div></div>
+     </div>
+       <span id="dj">百度一下</span>
+   </div>
+<script type="text/javascript">
+var input= document.getElementById("ss");
+var sousuo=document.getElementById("bk")
+var body=document.getElementById("body")
+var span=document.getElementById("dj")
+console.log(body)
+input.onclick=function(){
+sousuo.style.border="2px solid #4E6EF2";
+}
+body.onclick=function(){
+   if (input == document.activeElement) {
+      
+} else {
+   sousuo.style.border="2px solid #a2a4ac";
+}
+  
+}
+span.onclick=function(){
+   var vl=input.vlaue
+
+ open ("https://wanan857.github.io/learn/account/home/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E7%99%BE%E5%BA%A6%E4%B8%80%E4%B8%8B&fenlei=256&oq=%25E7%2599%25BE%25E5%25BA%25A6%25E6%2590%259C%25E7%25B4%25A2&rsv_pq=8f6ea23200000349&rsv_t=16bbUjsiQiWmwPd4AGWv277XW0gi1eMMFrgUcGN3PTT3E9hiXcFrOZyLc4w&rqlang=cn&rsv_enter=1&rsv_dl=tb&rsv_sug3=12&rsv_sug1=6&rsv_sug7=100&rsv_sug2=0&rsv_btype=t&inputT=1933&rsv_sug4=1933")
+}
+</script>
+   </body>
+</html>
