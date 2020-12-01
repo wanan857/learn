@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+
+            background-image: url("./tp2/header-bg.png");
+            
+        }
+        #huni{
+            width: 100%;
+          
+        }
+        #top{
+            margin-top: 60px;
+        }
+        #top img{
+            margin-left: 300px;
+            float: left;
+            
+        }
+        #top ul{
+            margin-right: 500px;
+            width: 1165px;
+           height: 90px;
+        }
+        #top ul li{
+            float: right;
+            list-style: none;
+            margin-right: 50px;
+            height: 90px;
+        }
+        #top ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 26px;
+            line-height: 90px;
+        }
+        #top ul li a:hover{
+            color: orange;
+        }
+        .ziti{
+            width: 420px;
+            height: 264px;
+            font-size: 70px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 264px;
+            display: inline-block;  
+        }
+        #tx{
+            margin-top: 200px;
+            width: 100%;
+        }
+      #tx img{
+        border-radius:50%;
+            animation: dh 2s;
+            animation-fill-mode: forwards;
+        }
+        span{
+            animation: dj 2s;
+            animation-fill-mode: forwards;
+            color: orange;
+            font-size: 40px;
+            float: right;
+            transition: 3s;
+        }
+        @keyframes dh{
+            from{
+        transform: translateX(0) rotateZ(0deg) ;
+            }
+            to{
+        transform:translateX(600px) rotateZ(720deg);
+            }   
+                }
+                @keyframes dj{
+            from{
+        transform: translateX(0)  ;
+            }
+            to{
+        transform:translateX(-300px);
+            }   
+                }
+
+   </style>
+  
+</head>
+<body>
+    <div id="huni">
+        <div id="top">
+          <img src="./tp2/logo.png" alt="" width="183" height="90">
+          <ul>
+            <li><a href="1.html">返回主页</a></li>
+          </ul>
+        </div>
+    </div>
+    <div id="tx">
+<img src="./tp2/timg.jpg" alt="" width="100" height="100"><span>陈嘉宇 保持热爱，好好生活。201916180118 </span><br>
+<img src="./tp2/timg.jpg" alt="" width="100" height="100"><span>前一位同学：周景涛 201916180117</span><br>
+<img src="./tp2/timg.jpg" alt="" width="100" height="100"><span>后一位同学：谭超峰 201916180119</span>
+
+    </div>
+</body>
+</html>
